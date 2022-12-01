@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="windows-1251" />
+    <title>Frontend Task №9</title>
+</head>
+<body>
+        <table class="main">
+            <tr>
+                <td colspan="5" id="display">0</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add_number(7)">7</td>
+                <td class="btn" onclick="add_number(8)">8</td>
+                <td class="btn" onclick="add_number(9)">9</td>
+                <td class="btn" onclick="add_operation('/')">/</td>
+                <td class="btn" onclick="clear_disp()">C</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add_number(4)">4</td>
+                <td class="btn" onclick="add_number(5)">5</td>
+                <td class="btn" onclick="add_number(6)">6</td>
+                <td class="btn" onclick="add_operation('*')">*</td>
+                <td class="btn" onclick="del_last()">&lt;-</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add_number(1)">1</td>
+                <td class="btn" onclick="add_number(2)">2</td>
+                <td class="btn" onclick="add_number(3)">3</td>
+                <td class="btn" onclick="add_operation('-')">-</td>
+                <td rowspan="2" class="btn" onclick="get_result()">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn" onclick="add_number(0)">0</td>
+                <td class="btn" onclick="add_number('.')">.</td>
+                <td class="btn" onclick="add_operation('+')">+</td>
+            </tr>
+        </table>
+        <script src="scripts.js"></script>
+</body>
+</html>
